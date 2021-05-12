@@ -2,7 +2,7 @@ public class Librarian extends Person {
     private int employeeId;
 
     //crud books
-
+    Book book [];
     public Librarian(String name, String family, int age, int nId, int employeeId) {
         super(name, family, age, nId);
         this.employeeId = employeeId;
