@@ -26,14 +26,17 @@ class Member_CRUD {
         }
         System.out.println(members.get(i).toString());
     }
+
+
     public boolean memberVerifySignIn(int memberId,int nationalId){
-        for (int i=0;i<members.size();i++){
-            if (memberId==members.get(i).getMemberId() && nationalId==members.get(i).getnId()){
+        for (Member member : members) {
+            if (memberId == member.getMemberId() && nationalId == member.getnId()) {
                 return true;
             }
         }
         return false;
     }
+
     public void updateProfile(int memberId,String name,String family,int age){
         for(int i=0;i<members.size();i++){
             if(memberId==members.get(i).getMemberId()){

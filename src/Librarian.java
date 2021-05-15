@@ -108,4 +108,13 @@ public class Librarian extends Person {
                 "employeeId=" + employeeId +
                 '}';
     }
+
+    public boolean memberVerifySignIn(int memberId,int nationalId){
+        for (Member member : members) {
+            if (memberId == member.getMemberId() && nationalId == member.getnId()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

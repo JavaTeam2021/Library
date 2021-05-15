@@ -243,7 +243,7 @@ public class Main {
                         int memid = scanner.nextInt();
                         System.out.print("National ID: ");
                         int nid = scanner.nextInt();
-                        if (mc.memberVerifySignIn(memid, nid)) {
+                        if (librarian.memberVerifySignIn(memid, nid) || mc.memberVerifySignIn(memid,nid)) {
                             while (true) {
                                 System.out.println("1.update Profile");
                                 System.out.println("2.delete account");
