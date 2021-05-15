@@ -4,6 +4,10 @@ public class Person {
     private int age;
     private int nId;
 
+    public Person() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -24,7 +28,7 @@ public class Person {
         return age;
     }
 
-    public void setAge(byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

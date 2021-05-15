@@ -7,6 +7,7 @@ public class Book {
         Name = name;
         this.flag = flag;
     }
+    public Book(){}
 
     public String getISBN() {
         return ISBN;
@@ -30,5 +31,14 @@ public class Book {
 
     public void setFlag(boolean flag) {
         this.flag = flag;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "ISBN='" + ISBN + '\'' +
+                ", Name='" + Name + '\'' +
+                ", flag=" + flag +
+                '}';
     }
 }
